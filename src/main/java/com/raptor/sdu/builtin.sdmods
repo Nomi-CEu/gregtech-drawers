@@ -24,6 +24,10 @@ hwell:
 	myst_planks:
 		planks	myst_planks
 		slab	myst_planks_slab
+	
+embers:
+	sealed_planks:
+		planks sealed_planks
 		
 quark:
 	white_stained_wood:

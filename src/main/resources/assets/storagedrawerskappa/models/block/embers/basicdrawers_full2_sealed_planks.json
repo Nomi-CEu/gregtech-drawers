@@ -1,0 +1,9 @@
+{
+    "parent": "storagedrawers:block/drawer_orientable",
+    "textures": {
+        "top": "storagedrawerskappa:blocks/embers/drawers_sealed_planks_side",
+        "front": "storagedrawerskappa:blocks/embers/drawers_sealed_planks_front_2",
+        "side": "storagedrawerskappa:blocks/embers/drawers_sealed_planks_side",
+        "trim": "storagedrawerskappa:blocks/embers/drawers_sealed_planks_trim"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "storagedrawerskappa:blocks/embers/drawers_sealed_planks_side"
+    }
+}
