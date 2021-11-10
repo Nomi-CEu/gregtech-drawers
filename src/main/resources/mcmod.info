@@ -6,8 +6,8 @@
 	"mcversion": "${mcversion}",
 	"url": "https://www.curseforge.com/minecraft/mc-mods/storagedrawerskappa",
 	"updateUrl": "",
-	"authorList": [ "ung3froren", "Raptor__" ],
-	"credits": "",
+	"authorList": [ "ung3froren" ],
+	"credits": "Forked from Storage Drawers Ultimate by Raptor__",
 	"screenshots": [],
 	"useDependencyInformation": true,
 	"requiredMods": [
