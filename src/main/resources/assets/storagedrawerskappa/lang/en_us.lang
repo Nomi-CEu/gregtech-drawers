@@ -1,3 +1,7 @@
+itemGroup.storagedrawerskappa=Storage Drawers KAPPA Addon
+storagedrawers.mod=Mod: %s
+storagedrawers.trim=%1$s %2$s
+tile.storagedrawers.trim.name=Trim
 storagedrawers.material.botania.dreamwood=Dreamwood
 storagedrawers.material.botania.livingwood=Livingwood
 storagedrawers.material.botania.shimmerwood=Shimmerwood
