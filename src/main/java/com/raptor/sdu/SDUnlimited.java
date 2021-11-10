@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = SDUnlimited.MODID, version = SDUnlimited.VERSION, name = "Storage Drawers Unlimited",
+@Mod(modid = SDUnlimited.MODID, version = SDUnlimited.VERSION, name = "Storage Drawers KAPPA Addon",
 		useMetadata = true)
 public class SDUnlimited {
 	public static final String MODID = "storagedrawerskappa";

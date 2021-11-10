@@ -623,10 +623,10 @@ public class Mods {
 			try(Scanner scan = scan0 = new Scanner(SDUnlimited.class.getResourceAsStream("builtin.sdmods"))) {
 				ModListParser.parseModList("builtin.sdmods", scan);
 			} catch(NullPointerException e) {
-				throw new Error("Missing com/raptor/sdu/builtin.sdmods in StorageDrawersUnlimited jar file!");
+				throw new Error("Missing com/raptor/sdu/builtin.sdmods in Storage Drawers KAPPA Addon jar file!");
 			}
 			if(scan0.ioException() != null) {
-				throw new Error("Error reading builtin.sdmods for StorageDrawersUnlimited", scan0.ioException());
+				throw new Error("Error reading builtin.sdmods for Storage Drawers KAPPA Addon", scan0.ioException());
 			}
 		}
 		
