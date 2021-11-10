@@ -1,9 +1,9 @@
 {
     "parent": "storagedrawers:block/drawer_orientable",
     "textures": {
-        "top": "storagedrawersunlimited:blocks/botania/drawers_livingwood_side",
-        "front": "storagedrawersunlimited:blocks/botania/drawers_livingwood_front_1",
-        "side": "storagedrawersunlimited:blocks/botania/drawers_livingwood_side",
-        "trim": "storagedrawersunlimited:blocks/botania/drawers_livingwood_trim"
+        "top": "storagedrawerskappa:blocks/botania/drawers_livingwood_side",
+        "front": "storagedrawerskappa:blocks/botania/drawers_livingwood_front_1",
+        "side": "storagedrawerskappa:blocks/botania/drawers_livingwood_side",
+        "trim": "storagedrawerskappa:blocks/botania/drawers_livingwood_trim"
     }
 }

@@ -1,5 +1,5 @@
 {
 	"variants": {
-		"normal": { "model": "storagedrawersunlimited:${modid}/trim_${material}" }
+		"normal": { "model": "storagedrawerskappa:${modid}/trim_${material}" }
 	}
 }

@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 @Mod(modid = SDUnlimited.MODID, version = SDUnlimited.VERSION, name = "Storage Drawers Unlimited",
 		useMetadata = true)
 public class SDUnlimited {
-	public static final String MODID = "storagedrawersunlimited";
+	public static final String MODID = "storagedrawerskappa";
 	public static final String VERSION = "${version}";
 	
 	@Instance(SDUnlimited.MODID)
@@ -34,7 +34,7 @@ public class SDUnlimited {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
-		configFolder = new File(event.getModConfigurationDirectory(), "storagedrawersunlimited");
+		configFolder = new File(event.getModConfigurationDirectory(), "storagedrawerskappa");
 		if(!configFolder.isDirectory())
 			configFolder.mkdirs();
 		proxy.preInit(event);

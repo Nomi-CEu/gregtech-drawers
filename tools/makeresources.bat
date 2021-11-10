@@ -21,7 +21,7 @@ set argshift=2
 for /f "usebackq tokens=%argshift%*" %%i in (`echo %*`) DO @ set params=%%j
 
 set templates=ResourceCreator\templates
-set out=..\src\main\resources\assets\storagedrawersunlimited
+set out=..\src\main\resources\assets\storagedrawerskappa
 set options=-i -iq -nrl
 set textures=%out%\textures\blocks
 
