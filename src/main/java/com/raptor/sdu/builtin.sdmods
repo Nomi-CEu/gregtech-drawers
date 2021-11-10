@@ -20,6 +20,11 @@ astralsorcery:
 	infused_wood:
 		planks	blockinfusedwood 0
 		
+hwell:
+	myst_planks:
+		planks	myst_planks
+		slab	myst_planks_slab
+		
 quark:
 	white_stained_wood:
 		planks	stained_planks 0
