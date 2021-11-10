@@ -1,0 +1,10 @@
+{
+    "parent": "storagedrawers:block/drawer_half",
+    "textures": {
+        "top": "storagedrawerskappa:blocks/astralsorcery/drawers_infused_wood_side_h",
+        "front": "storagedrawerskappa:blocks/astralsorcery/drawers_infused_wood_front_4",
+        "back": "storagedrawerskappa:blocks/astralsorcery/drawers_infused_wood_side",
+        "side": "storagedrawerskappa:blocks/astralsorcery/drawers_infused_wood_side_v",
+        "trim": "storagedrawerskappa:blocks/astralsorcery/drawers_infused_wood_trim"
+    }
+}

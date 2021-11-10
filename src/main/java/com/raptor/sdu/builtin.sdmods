@@ -15,6 +15,10 @@ botania:
 	shimmerwood:
 		planks	shimmerwoodplanks
 		slab	shimmerwoodplanks0slab
+
+astralsorcery:
+	infused_wood:
+		planks	blockinfusedwood 0
 		
 quark:
 	white_stained_wood:
