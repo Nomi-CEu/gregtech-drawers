@@ -1,15 +1,5 @@
 package com.raptor.sdu.event;
 
-import static com.raptor.sdu.type.Mods.BLOCKS;
-import static com.raptor.sdu.type.Mods.ENABLED_MODS;
-import static com.raptor.sdu.type.Mods.ITEMS;
-import static net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.annotation.Nonnull;
-
 import com.jaquadro.minecraft.storagedrawers.StorageDrawers;
 import com.jaquadro.minecraft.storagedrawers.api.storage.EnumBasicDrawer;
 import com.jaquadro.minecraft.storagedrawers.config.ConfigManager;
@@ -21,7 +11,6 @@ import com.raptor.sdu.item.ItemUnlimitedTrim;
 import com.raptor.sdu.type.DrawerMaterial;
 import com.raptor.sdu.type.DrawerMaterial.AbstractItemStack;
 import com.raptor.sdu.type.Mod;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -32,6 +21,15 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.registries.IForgeRegistry;
+
+import javax.annotation.Nonnull;
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.raptor.sdu.type.Mods.BLOCKS;
+import static com.raptor.sdu.type.Mods.ENABLED_MODS;
+import static com.raptor.sdu.type.Mods.ITEMS;
+import static net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE;
 
 public class RegistryEvents {
 
@@ -53,10 +51,6 @@ public class RegistryEvents {
 			if((!isDrawer || anyDrawerEnabled)
 					&& (!isTrim || trimEnabled)) {
 				registry.register(block);
-				if(isDrawer)
-					OreDictionary.registerOre("drawerBasic", new ItemStack(block, 1, WILDCARD_VALUE));
-				else if(isTrim)
-					OreDictionary.registerOre("drawerTrim", new ItemStack(block, 1, WILDCARD_VALUE));
 			}
 		}
 	}
@@ -74,9 +68,15 @@ public class RegistryEvents {
 			}
 		}
 		for(Item item : ITEMS) {
-			if((!(item instanceof ItemUnlimitedDrawers) || anyDrawerEnabled)
-					&& (!(item instanceof ItemUnlimitedTrim) || trimEnabled)) {
+			boolean isDrawer = item instanceof ItemUnlimitedDrawers;
+			boolean isTrim = item instanceof ItemUnlimitedTrim;
+			if ((!isDrawer || anyDrawerEnabled)
+					&& (!isTrim || trimEnabled)) {
 				registry.register(item);
+				if (isDrawer)
+					OreDictionary.registerOre("drawerBasic", new ItemStack(item, 1, WILDCARD_VALUE));
+				else if (isTrim)
+					OreDictionary.registerOre("drawerTrim", item);
 			}
 		}
 	}
