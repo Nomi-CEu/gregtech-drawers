@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "${mcversion}-${mod_version}"
-group = "io.github.joblo2213" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "storage-drawers-kappa"
+group = "io.github.nomiceu" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "gregtech-drawers"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {

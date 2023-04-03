@@ -1,22 +1,21 @@
 [{
-	"modid": "storagedrawerskappa",
-	"name": "Storage Drawers KAPPA Addon",
-	"description": "Additonal Storage Drawers for skate's CraftBlock modpack. ",
+	"modid": "gregtechdrawers",
+	"name": "Gregtech Drawers",
+	"description": "Rubber and Treated Wood Drawers from GTCEu",
 	"version": "${version}",
 	"mcversion": "${mcversion}",
-	"url": "https://www.curseforge.com/minecraft/mc-mods/storagedrawerskappa",
+	"url": "https://www.curseforge.com/minecraft/mc-mods/gregtech-drawers",
 	"updateUrl": "",
-	"authorList": [ "ung3froren" ],
-	"credits": "Forked from Storage Drawers Ultimate by Raptor__",
+	"authorList": [ "integerlimit_", "ung3froren" ],
+	"credits": "Forked from Storage Drawers KAPPA Addon by ung3froren",
 	"screenshots": [],
 	"useDependencyInformation": true,
 	"requiredMods": [
-		"storagedrawers"
+		"storagedrawers",
+		"gregtech"
 	],
 	"dependencies": [
 		"storagedrawers",
-		"botania",
-		"immersiveengineering",
-		"quark"
+		"gregtech"
 	]
 }]
