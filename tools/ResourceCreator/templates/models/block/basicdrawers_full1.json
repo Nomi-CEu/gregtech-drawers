@@ -1,9 +1,9 @@
 {
     "parent": "storagedrawers:block/drawer_orientable",
     "textures": {
-        "top": "storagedrawerskappa:blocks/${modid}/drawers_${material}_side",
-        "front": "storagedrawerskappa:blocks/${modid}/drawers_${material}_front_1",
-        "side": "storagedrawerskappa:blocks/${modid}/drawers_${material}_side",
-        "trim": "storagedrawerskappa:blocks/${modid}/drawers_${material}_trim"
+        "top": "gregtechdrawers:blocks/${modid}/drawers_${material}_side",
+        "front": "gregtechdrawers:blocks/${modid}/drawers_${material}_front_1",
+        "side": "gregtechdrawers:blocks/${modid}/drawers_${material}_side",
+        "trim": "gregtechdrawers:blocks/${modid}/drawers_${material}_trim"
     }
 }

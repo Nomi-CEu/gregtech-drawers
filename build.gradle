@@ -49,7 +49,7 @@ processResources {
     // copy everything else except the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
-		//exclude 'assets/storagedrawerskappa/textures/blocks/makeresources.bat'
+		//exclude 'assets/gregtechdrawers/textures/blocks/makeresources.bat'
     }
 	
 	from(sourceSets.main.java.srcDirs) {

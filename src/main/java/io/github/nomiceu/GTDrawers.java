@@ -36,7 +36,7 @@ public class GTDrawers {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
-		configFolder = new File(event.getModConfigurationDirectory(), "storagedrawerskappa");
+		configFolder = new File(event.getModConfigurationDirectory(), "gregtechdrawers");
 		if(!configFolder.isDirectory())
 			configFolder.mkdirs();
 		proxy.preInit(event);

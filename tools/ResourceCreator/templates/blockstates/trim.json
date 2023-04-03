@@ -1,5 +1,5 @@
 {
 	"variants": {
-		"normal": { "model": "storagedrawerskappa:${modid}/trim_${material}" }
+		"normal": { "model": "gregtechdrawers:${modid}/trim_${material}" }
 	}
 }

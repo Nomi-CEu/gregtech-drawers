@@ -1,10 +1,10 @@
 {
     "parent": "storagedrawers:block/drawer_half",
     "textures": {
-        "top": "storagedrawerskappa:blocks/gregtech/drawers_rubber_wood_side_h",
-        "front": "storagedrawerskappa:blocks/gregtech/drawers_rubber_wood_front_4",
-        "back": "storagedrawerskappa:blocks/gregtech/drawers_rubber_wood_side",
-        "side": "storagedrawerskappa:blocks/gregtech/drawers_rubber_wood_side_v",
-        "trim": "storagedrawerskappa:blocks/gregtech/drawers_rubber_wood_trim"
+        "top": "gregtechdrawers:blocks/gregtech/drawers_rubber_wood_side_h",
+        "front": "gregtechdrawers:blocks/gregtech/drawers_rubber_wood_front_4",
+        "back": "gregtechdrawers:blocks/gregtech/drawers_rubber_wood_side",
+        "side": "gregtechdrawers:blocks/gregtech/drawers_rubber_wood_side_v",
+        "trim": "gregtechdrawers:blocks/gregtech/drawers_rubber_wood_trim"
     }
 }
