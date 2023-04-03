@@ -4,16 +4,10 @@
 	"description": "Rubber and Treated Wood Drawers from GTCEu",
 	"version": "${version}",
 	"mcversion": "${mcversion}",
+	"logoFile": "assets/gregtechdrawers/textures/logo.png",
 	"url": "https://www.curseforge.com/minecraft/mc-mods/gregtech-drawers",
-	"updateUrl": "",
-	"authorList": [ "integerlimit_", "ung3froren" ],
+	"authorList": [ "integerlimit_", "ung3froren", "Raptor__" ],
 	"credits": "Forked from Storage Drawers KAPPA Addon by ung3froren",
-	"screenshots": [],
-	"useDependencyInformation": true,
-	"requiredMods": [
-		"storagedrawers",
-		"gregtech"
-	],
 	"dependencies": [
 		"storagedrawers",
 		"gregtech"

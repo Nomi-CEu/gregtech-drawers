@@ -15,8 +15,13 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = GTDrawers.MODID, version = GTDrawers.VERSION, name = GTDrawers.NAME,
-		useMetadata = true)
+@Mod(modid = GTDrawers.MODID,
+		version = GTDrawers.VERSION,
+		name = GTDrawers.NAME,
+		acceptedMinecraftVersions = "[1.12.2,1.13)",
+		dependencies = "required:forge@[14.23.5.2847,);"
+				+ "required-after:gregtech@[2.5.5,);"
+				+ "required-after:storagedrawers;")
 public class GTDrawers {
 	public static final String MODID = "gregtechdrawers";
 	public static final String VERSION = "${version}";
