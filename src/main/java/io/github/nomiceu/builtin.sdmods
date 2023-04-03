@@ -1,7 +1,7 @@
 gregtech:
     rubber_wood:
-        planks  planks
-        slab    wood_slab
+        planks  planks 0
+        slab    wood_slab 0
     treated_wood:
         planks  planks 1
         slab    wood_slab 1
