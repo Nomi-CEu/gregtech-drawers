@@ -26,7 +26,7 @@ public class GTDrawers {
 	@Instance(GTDrawers.MODID)
 	public static GTDrawers instance;
 	
-	@SidedProxy(clientSide = "com.raptor.sdu.proxy.ClientProxy", serverSide = "com.raptor.sdu.proxy.CommonProxy")
+	@SidedProxy(clientSide = "io.github.nomiceu.proxy.ClientProxy", serverSide = "io.github.nomiceu.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
 	public static Logger logger;
