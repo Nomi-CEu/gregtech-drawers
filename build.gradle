@@ -27,8 +27,24 @@ minecraft {
     mappings = forge_mappings
     makeObfSourceJar = false
 	
-	replaceIn "SDUnlimited.java"
+	replaceIn "GTDrawers.java"
 	replace '${version}', project.version
+}
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
+    maven {
+        name = "hwyla"
+        url = "https://github.com/TehNut/temporary-maven-thing/raw/master/maven"
+    }
+}
+
+dependencies {
+    deobfCompile "curse.maven:storage-drawers-223852:2952606"
+    deobfCompile "curse.maven:chameleon-230497:2450900"
+    deobfCompile "mcp.mobius.waila:Hwyla:${hwyla_version}_${mcversion}"
 }
 
 processResources {
