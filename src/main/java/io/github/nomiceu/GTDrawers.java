@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 		name = GTDrawers.NAME,
 		acceptedMinecraftVersions = "[1.12.2,1.13)",
 		dependencies = "required:forge@[14.23.5.2847,);"
-				+ "required-after:gregtech@[2.5.5,);"
+				+ "required-after:gregtech@[2.6,);"
 				+ "required-after:storagedrawers;")
 public class GTDrawers {
 	public static final String MODID = "gregtechdrawers";
