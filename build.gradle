@@ -35,16 +35,11 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
-    maven {
-        name = "hwyla"
-        url = "https://github.com/TehNut/temporary-maven-thing/raw/master/maven"
-    }
 }
 
 dependencies {
     deobfCompile "curse.maven:storage-drawers-223852:2952606"
     deobfCompile "curse.maven:chameleon-230497:2450900"
-    deobfCompile "mcp.mobius.waila:Hwyla:${hwyla_version}_${mcversion}"
     deobfCompile "curse.maven:the-one-probe-245211:2667280"
 }
 
