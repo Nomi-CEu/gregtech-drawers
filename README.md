@@ -18,7 +18,8 @@ Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unli
 
 #### Removed all existing drawers / trims
 
-#### Added WAILA Addon
+#### Fixed an Issue with TOP, and revamped config
+* TOP would display a Taped Drawer, even if the drawer wasn't taped, as long as the {Keep Contents on Break} Storage Drawers Config was turned on.
 
 
 

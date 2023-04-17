@@ -7,21 +7,8 @@ import net.minecraftforge.common.config.Config.RequiresMcRestart;
 
 @Config(modid = GTDrawers.MODID)
 public class GTDConfig {
-	
-	@Name("force load")
-	@Comment({"A list of mod ids whose drawers should",
-			"always be created, even if the mod is not present."})
+	@Name("Fix TOP Displaying Taped Drawers")
+	@Comment("Fix a bug where TOP would display a taped drawer if the drawer contained items, if the [Keep Contents on Break] storage drawer config was enabled.")
 	@RequiresMcRestart
-	public static String[] forcedMods = new String[0];
-	
-	@Name("force all")
-	@Comment("Set this to true to force all available mods to load.")
-	public static boolean force_all = false;
-	
-	@Name("disable")
-	@Comment({"A list of mod ids whose drawers should",
-			"never be created, even if the mod is loaded."})
-	@RequiresMcRestart
-	public static String[] disabledMods = new String[0];
-	
+	public static boolean fixTOPTaped = true;
 }

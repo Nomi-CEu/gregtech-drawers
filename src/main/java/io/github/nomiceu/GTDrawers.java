@@ -2,6 +2,8 @@ package io.github.nomiceu;
 
 import java.io.File;
 
+import io.github.nomiceu.integration.TOP.TOPCompat;
+import net.minecraftforge.fml.common.Loader;
 import org.apache.logging.log4j.Logger;
 
 import io.github.nomiceu.proxy.CommonProxy;
@@ -50,6 +52,10 @@ public class GTDrawers {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
+		if (Loader.isModLoaded("theoneprobe")) {
+			logger.info("Detected The One Probe. Enabling custom handlers.");
+			TOPCompat.registerProviders();
+		}
 	}
 	
 	@EventHandler

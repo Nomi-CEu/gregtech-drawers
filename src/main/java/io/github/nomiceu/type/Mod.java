@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import io.github.nomiceu.GTDConfig;
+import net.minecraftforge.fml.common.ModContainer;
 import org.apache.commons.lang3.tuple.Pair;
 
 import net.minecraftforge.fml.common.Loader;
@@ -19,7 +19,6 @@ public class Mod implements StreamableIterable<DrawerMaterial> {
 	static final ArrayList<Mod> internal_modlist = new ArrayList<>();
 		
 	public final String modid;
-	private String[] other_modids, disabled_modids;
 	private String modname;
 	private final Map<String, DrawerMaterial> materials;
 	
@@ -39,8 +38,6 @@ public class Mod implements StreamableIterable<DrawerMaterial> {
 	
 	public Mod(String modid, String[] other_modids, String[] disabled_modids, DrawerMaterial.Builder... materialsIn) {
 		this.modid = modid;
-		this.other_modids = other_modids;
-		this.disabled_modids = disabled_modids;
 		this.materials = Collections.unmodifiableMap(Arrays.stream(materialsIn)
 								.map(builder -> builder.build(this))
 								.filter(Optional::isPresent)
@@ -67,7 +64,7 @@ public class Mod implements StreamableIterable<DrawerMaterial> {
 	}
 	
 	public String getModName() {
-		return modname == null? modname = Loader.instance().getModList().stream().filter(container -> container.getModId().equals(modid)).map(container -> container.getName()).findFirst().orElse(modid + " [not loaded]")
+		return modname == null? modname = Loader.instance().getModList().stream().filter(container -> container.getModId().equals(modid)).map(ModContainer::getName).findFirst().orElse(modid + " [not loaded]")
 								: modname;
 	}
 	
@@ -76,45 +73,7 @@ public class Mod implements StreamableIterable<DrawerMaterial> {
 	}
 	
 	public boolean isEnabled() {
-		if(areAnyIncompatibleModsLoaded())
-			return false;
-		
-		if(GTDConfig.force_all && !contains(GTDConfig.disabledMods, modid)) {
-			if(other_modids.length != 0) {
-				for(String modid : other_modids) {
-					if(contains(GTDConfig.disabledMods, modid))
-						return false;
-				}
-			}
-			return true;
-		}
-		
-		if(Loader.isModLoaded(modid) && !contains(GTDConfig.disabledMods, modid) || contains(GTDConfig.forcedMods, modid))
-			return true;
-		if(other_modids.length == 0)
-			return false;
-		for(String modid : other_modids) {
-			if(Loader.isModLoaded(modid) && !contains(GTDConfig.disabledMods, modid) || contains(GTDConfig.forcedMods, modid))
-				return true;
-		}
-		return false;
-	}
-	
-	public boolean areAnyIncompatibleModsLoaded() {
-		if(disabled_modids.length == 0) return false;
-		for(String modid : disabled_modids) {
-			if(Loader.isModLoaded(modid))
-				return true;
-		}
-		return false;
-	}
-	
-	private static boolean contains(String[] array, String value) {
-		for(String element : array) {
-			if(value.equals(element))
-				return true;
-		}
-		return false;
+		return true;
 	}
 	
 	public Iterator<DrawerMaterial> iterator() {
