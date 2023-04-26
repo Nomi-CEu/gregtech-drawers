@@ -18,7 +18,7 @@
         "block=half2,facing=east": { "model": "gregtechdrawers:gregtech/basicdrawers_half2_treated_wood", "y": 90 },
         "block=half4,facing=north": { "model": "gregtechdrawers:gregtech/basicdrawers_half4_treated_wood" },
         "block=half4,facing=south": { "model": "gregtechdrawers:gregtech/basicdrawers_half4_treated_wood", "y": 180 },
-        "block=half4,facing=west": { "model": "storagedrawerskappa:gregtech/basicdrawers_half4_treated_wood", "y": 270 },
-        "block=half4,facing=east": { "model": "storagedrawerskappa:gregtech/basicdrawers_half4_treated_wood", "y": 90 }
+        "block=half4,facing=west": { "model": "gregtechdrawers:gregtech/basicdrawers_half4_treated_wood", "y": 270 },
+        "block=half4,facing=east": { "model": "gregtechdrawers:gregtech/basicdrawers_half4_treated_wood", "y": 90 }
     }
 }
