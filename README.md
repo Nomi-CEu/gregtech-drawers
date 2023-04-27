@@ -8,18 +8,12 @@ This mod requires GTCEu 2.6+, Storage Drawers, and their dependencies (Chameleon
 
 This mod is a fork of JOB10's [Storage Drawers Kappa Addon](https://www.curseforge.com/minecraft/mc-mods/storagedrawerskappa), and uses its main code. This removes all of the integrations there, and replaces it with GT integration. The code there is very flexible, and can be used to create other drawer types. Go there for more information. 
 
-Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unlimited](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-unlimited). We have used JOB10's fork, as it has some fixes over the original mod, which has been abandoned for 1.12. Both mods are amazing.
+Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unlimited](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-unlimited). We have used JOB10's fork, as it has some fixes over the original mod. Both mods are amazing.
 
 ## Changes from Storage Drawers KAPPA:
 
-#### Added Drawers / Trims
-* Rubber Wood Drawers
-* Treated Wood Drawers
-
 #### Removed all existing drawers / trims
 
-#### Fixed an Issue with TOP, and revamped config
-* TOP would display a Taped Drawer, even if the drawer wasn't taped, as long as the {Keep Contents on Break} Storage Drawers Config was turned on.
-
-
-
+#### Added Drawers / Trims
+* Rubber Wood
+* Treated Wood
