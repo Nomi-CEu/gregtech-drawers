@@ -102,6 +102,13 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+    from(sourceSets.main.java.srcDirs) {
+        include '**/builtin.sdmods'
+    }
+
+    from(sourceSets.main.java.srcDirs) {
+        exclude '**/*.bat'
+    }
 
     if (project.use_access_transformer.toBoolean()) {
         rename '(.+_at.cfg)', 'META-INF/$1' // Access Transformers
