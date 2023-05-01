@@ -20,5 +20,6 @@ Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unli
 
 #### Removed All Config (No longer needed for GT Drawers)
 
-#### New Buildscript
+#### Added linux makeresources, by [0xC4DE](https://github.com/0xC4DE)
 
+#### New Buildscript
