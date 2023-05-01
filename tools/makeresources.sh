@@ -16,7 +16,7 @@ extra_params="${@:3}"
 templates_dir="ResourceCreator/templates"
 out_dir="../src/main/resources/assets/gregtechdrawers"
 options="-i -iq -nrl"
-textures="$out/textures/blocks"
+textures="$out_dir/textures/blocks"
 
 echo modid=$modid
 echo name="$name"
