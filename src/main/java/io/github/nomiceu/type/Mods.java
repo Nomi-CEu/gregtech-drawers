@@ -1,7 +1,5 @@
 package io.github.nomiceu.type;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -9,9 +7,7 @@ import java.util.stream.Collectors;
 import io.github.nomiceu.GTDrawers;
 import io.github.nomiceu.block.BlockGTDrawers;
 import io.github.nomiceu.block.BlockGTTrim;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.logging.log4j.Level;
 
 import io.github.nomiceu.item.ItemGTDrawers;
 import io.github.nomiceu.item.ItemGTTrim;
@@ -622,15 +618,6 @@ public class Mods {
 			}
 			if(scan0.ioException() != null) {
 				throw new Error("Error reading builtin.sdmods for Gregtech Drawers.", scan0.ioException());
-			}
-		}
-		
-		// load user-defined mods
-		for(File modList : GTDrawers.configFolder.listFiles(file -> file.isFile() && StringUtils.endsWithIgnoreCase(file.getName(), ".sdmods"))) {
-			try(Scanner scan = new Scanner(modList)) {
-				ModListParser.parseModList(modList.getName(), scan);
-			} catch(ModListParser.ModListSyntaxException | FileNotFoundException e) {
-				GTDrawers.logger.log(Level.ERROR, e);
 			}
 		}
 		

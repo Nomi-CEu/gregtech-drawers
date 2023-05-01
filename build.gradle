@@ -77,7 +77,6 @@ dependencies {
     }
     deobfCompile "curse.maven:storage-drawers-223852:2952606"
     deobfCompile "curse.maven:chameleon-230497:2450900"
-    deobfCompile "curse.maven:the-one-probe-245211:2667280"
 }
 
 sourceSets {
@@ -101,6 +100,13 @@ processResources {
     // copy everything else except the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
+    }
+    from(sourceSets.main.java.srcDirs) {
+        include '**/builtin.sdmods'
+    }
+
+    from(sourceSets.main.java.srcDirs) {
+        exclude '**/*.bat'
     }
 
     if (project.use_access_transformer.toBoolean()) {
