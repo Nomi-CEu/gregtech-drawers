@@ -77,7 +77,6 @@ dependencies {
     }
     deobfCompile "curse.maven:storage-drawers-223852:2952606"
     deobfCompile "curse.maven:chameleon-230497:2450900"
-    deobfCompile "curse.maven:the-one-probe-245211:2667280"
 }
 
 sourceSets {

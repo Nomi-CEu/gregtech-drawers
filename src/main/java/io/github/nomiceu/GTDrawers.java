@@ -1,9 +1,5 @@
 package io.github.nomiceu;
 
-import java.io.File;
-
-import io.github.nomiceu.integration.TOP.TOPCompat;
-import net.minecraftforge.fml.common.Loader;
 import org.apache.logging.log4j.Logger;
 
 import io.github.nomiceu.proxy.CommonProxy;
@@ -37,25 +33,15 @@ public class GTDrawers {
 	public static CommonProxy proxy;
 	
 	public static Logger logger;
-	
-	public static File configFolder; 
-	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
-		configFolder = new File(event.getModConfigurationDirectory(), "gregtechdrawers");
-		if(!configFolder.isDirectory())
-			configFolder.mkdirs();
 		proxy.preInit(event);
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
-		if (Loader.isModLoaded("theoneprobe")) {
-			logger.info("Detected The One Probe. Enabling custom handlers.");
-			TOPCompat.registerProviders();
-		}
 	}
 	
 	@EventHandler

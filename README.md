@@ -6,7 +6,7 @@ It adds drawers for rubber and treated wood types found in [GTCEu](https://www.c
 
 This mod requires GTCEu 2.6+, Storage Drawers, and their dependencies (Chameleon & CodeChickenLib)
 
-This mod is a fork of JOB10's [Storage Drawers Kappa Addon](https://www.curseforge.com/minecraft/mc-mods/storagedrawerskappa), and uses its main code. This removes all of the integrations there, and replaces it with GT integration. The code there is very flexible, and can be used to create other drawer types. Go there for more information. 
+This mod is a fork of JOB10's [Storage Drawers Kappa Addon](https://www.curseforge.com/minecraft/mc-mods/storagedrawerskappa), and uses its main code. This removes all the integrations there, and replaces it with GT integration. The code there is very flexible, and can be used to create other drawer types. Go there for more information. 
 
 Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unlimited](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-unlimited). We have used JOB10's fork, as it has some fixes over the original mod. Both mods are amazing.
 
@@ -17,3 +17,8 @@ Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unli
 #### Added Drawers / Trims
 * Rubber Wood
 * Treated Wood
+
+#### Removed All Config (No longer needed for GT Drawers)
+
+#### New Buildscript
+
