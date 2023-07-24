@@ -28,7 +28,7 @@ public class GTDrawers {
 	@Instance(GTDrawers.MODID)
 	public static GTDrawers instance;
 	
-	@SidedProxy(clientSide = "io.github.nomiceu.proxy.ClientProxy", serverSide = "io.github.nomiceu.proxy.CommonProxy")
+	@SidedProxy(clientSide = "com.nomiceu.gregtechdrawers.proxy.ClientProxy", serverSide = "com.nomiceu.gregtechdrawers.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
 	public static Logger logger;
