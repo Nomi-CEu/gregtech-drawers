@@ -1,0 +1,7 @@
+itemGroup.gregtechdrawers=Gregtech Drawers
+storagedrawers.mod=Mod: %s
+storagedrawers.trim=%1$sの%2$s
+tile.storagedrawers.trim.name=飾り箱
+
+storagedrawers.material.gregtech.rubber_wood=ゴムの木材
+storagedrawers.material.gregtech.treated_wood=防腐木材
