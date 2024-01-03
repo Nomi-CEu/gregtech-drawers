@@ -10,6 +10,11 @@ This mod is a fork of JOB10's [Storage Drawers Kappa Addon](https://www.cursefor
 
 Please note that JOB10's repo is itself a fork of Raptor's [Storage Drawers Unlimited](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-unlimited). We have used JOB10's fork, as it has some fixes over the original mod. Both mods are amazing.
 
+## Translations
+Translations are offered for GregTech Drawers, in a separate 'language pack'. This is available to download [here](https://nightly.link/Nomi-CEu/Nomi-CEu-Translations/workflows/pushbuildpack/main?preview) (download the 'gregtech-drawers' zip for GregTech Drawers).
+
+For more information, including supported languages and their status, see [the GitHub Page](https://github.com/Nomi-CEu/Nomi-CEu-Translations/).
+
 ## Changes from Storage Drawers KAPPA:
 
 #### Removed all existing drawers / trims
