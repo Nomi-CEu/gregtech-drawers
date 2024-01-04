@@ -1,13 +1,13 @@
 [{
 	"modid": "gregtechdrawers",
-	"name": "Gregtech Drawers",
-	"description": "Rubber and Treated Wood Drawers from GTCEu",
+	"name": "GregTech Drawers",
+	"description": "Rubber and Treated Wood Drawers from GTCEu!",
 	"version": "${version}",
 	"mcversion": "${mcversion}",
 	"logoFile": "assets/gregtechdrawers/textures/logo.png",
 	"url": "https://www.curseforge.com/minecraft/mc-mods/gregtech-drawers",
 	"authorList": [ "integerlimit_", "ung3froren", "Raptor__" ],
-	"credits": "Forked from Storage Drawers KAPPA Addon by ung3froren",
+	"credits": "Forked from Storage Drawers KAPPA Addon by ung3froren.",
 	"dependencies": [
 		"storagedrawers",
 		"gregtech"

@@ -55,8 +55,6 @@ public class ItemGTDrawers extends ItemDrawers implements IItemMeshMapper {
 	@SideOnly(Side.CLIENT)
 	public void addInformation(@Nonnull ItemStack itemStack, @Nullable World world, List<String> list, ITooltipFlag advanced) {
 		list.add(I18n.format("storagedrawers.material", I18n.format("storagedrawers.material." + this.mod + '.' + this.material)));
-		if(advanced.isAdvanced())
-			list.add(I18n.format("storagedrawers.mod", mod.getModName()));
 		list.add(I18n.format("storagedrawers.drawers.description", getCapacityForBlock(itemStack)));
 		
 		if(itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("tile"))

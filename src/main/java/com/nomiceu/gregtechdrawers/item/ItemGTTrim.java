@@ -35,11 +35,4 @@ public class ItemGTTrim extends ItemBlock {
 	public String getItemStackDisplayName(ItemStack stack) {
 		return I18n.format("storagedrawers.trim", I18n.format("storagedrawers.material." + this.mod + '.' + this.material), super.getItemStackDisplayName(stack));
 	}
-	
-	@Override
-	@SideOnly(Side.CLIENT)
-	public void addInformation(@Nonnull ItemStack itemStack, @Nullable World world, List<String> list, ITooltipFlag advanced) {
-		if(advanced.isAdvanced())
-			list.add(I18n.format("storagedrawers.mod", mod.getModName()));
-	}
 }

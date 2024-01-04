@@ -18,12 +18,13 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 		name = GTDrawers.NAME,
 		acceptedMinecraftVersions = "[1.12.2,1.13)",
 		dependencies = "required:forge@[14.23.5.2847,);"
+				+ "required-after:codechickenlib@[3.2.3,);"
 				+ "required-after:gregtech@[2.6,);"
 				+ "required-after:storagedrawers;")
 public class GTDrawers {
 	public static final String MODID = "gregtechdrawers";
 
-	public static final String NAME = "Gregtech Drawers";
+	public static final String NAME = "GregTech Drawers";
 	
 	@Instance(GTDrawers.MODID)
 	public static GTDrawers instance;

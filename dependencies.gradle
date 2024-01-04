@@ -24,4 +24,7 @@
 dependencies {
     implementation rfg.deobf("curse.maven:storage-drawers-223852:2952606")
     implementation rfg.deobf("curse.maven:chameleon-230497:2450900")
+
+    runtimeOnly rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848") // Version 3.2.3.358
+    runtimeOnly rfg.deobf("maven.modrinth:gregtech-ce-unofficial:Kff6K1WR") // Version 2.8.5
 }
